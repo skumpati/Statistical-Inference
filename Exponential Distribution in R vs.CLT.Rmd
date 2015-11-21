@@ -15,7 +15,8 @@ Project Simulation
 Sample Mean vs Theoretical Mean
 
  	Firstly analyze the sample mean and compare it to the theoretical mean
- 	
+
+## Theoritcal mean comparison 	
 set.seed(1)
 lambda <- 0.2 ## Set lambda as per instructions
 nexp <- 40 ## number of distributions
@@ -27,7 +28,7 @@ hist(mns,col="light green",main="Distribution of Means of rexp")
  
 As we observe the histogram, with a mean – { mean(mns)  ## [1] 4.9900252} , we can compare to {1/lambda ( ## [1] 5) }, we observed the distribution of means is centred in the theoretical mean. 
 
-Sample Variance vs Theoretical Variance
+## Sample Variance vs Theoretical Variance
 
 # lambda <- 0.2 ## Set lambda as per instructions (does not change)
 # nexp <- 40 ## number of distributions (does not change)
@@ -40,6 +41,7 @@ Comparing to a Normal Distribution
 
 According to the histogram which is similar to a normal distribution (i.e. what the Central Limit Theorem states “In probability theory, the central limit theorem (CLT) states that, at any given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and well-defined variance, will be approximately normally distributed, regardless of the underlying distribution”)
 
+## Plot2
 library(ggplot2)
 plotdata <- data.frame(mns)
 plot1 <- ggplot(plotdata,aes(x = mns))
@@ -54,6 +56,7 @@ print(plot1)
 So we see it can compare to a Normal distribution (Black represents the calculated Normal Distribution, and Red represents the theoretical one)
 With a bigger number of simulations, let’s say 100000:
 
+## Example for a bigger number
 set.seed(1)
 lambda <- 0.2 ## Set lambda as per instructions
 nexp <- 40 ## number of distributions
@@ -63,6 +66,7 @@ for (i in 1 : nsim) mns <- c(mns, mean(rexp(40,lambda)))
 varxp <- ((1/lambda)^2)/nexp ## theoretical variance
 varmean <- var(mns) ## variance of the means
 
+## plot3
 library(ggplot2)
 plotdata <- data.frame(mns)
 plot1 <- ggplot(plotdata,aes(x = mns))
