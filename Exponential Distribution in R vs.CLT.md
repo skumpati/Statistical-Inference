@@ -14,8 +14,7 @@ Illustrate via simulation and associated explanatory text the properties of the 
 #Project Simulation
 
 #Sample Mean vs Theoretical Mean
-
- 	Firstly analyze the sample mean and compare it to the theoretical mean
+Firstly analyze the sample mean and compare it to the theoretical mean
 
 # Theoritcal mean comparison 
 ```{r}
