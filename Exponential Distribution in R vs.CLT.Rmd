@@ -18,10 +18,10 @@ Sample Mean vs Theoretical Mean
 
 ## Theoritcal mean comparison 	
 set.seed(1)
-lambda <- 0.2 ## Set lambda as per instructions
-nexp <- 40 ## number of distributions
-nsim <- 1000 ## number of simulations
-mns <- NULL  ## set mns to null 
+lambda <- 0.2 
+nexp <- 40 
+nsim <- 1000 
+mns <- NULL  
 for (i in 1 : nsim) mns <- c(mns, mean(rexp(40,lambda)))
 hist(mns,col="light green",main="Distribution of Means of rexp")
 
@@ -30,11 +30,11 @@ As we observe the histogram, with a mean – { mean(mns)  ## [1] 4.9900252} , we
 
 ## Sample Variance vs Theoretical Variance
 
-# lambda <- 0.2 ## Set lambda as per instructions (does not change)
-# nexp <- 40 ## number of distributions (does not change)
-# nsim <- 1000 ## number of simulations (does not change)
-varxp <- ((1/lambda)^2)/nexp ## theoretical variance
-varmean <- var(mns) ## variance of the means
+# lambda <- 0.2 # Set lambda as per instructions (does not change)
+# nexp <- 40 # number of distributions (does not change)
+# nsim <- 1000 # number of simulations (does not change)
+varxp <- ((1/lambda)^2)/nexp # theoretical variance
+varmean <- var(mns) # variance of the means
 
 And we see that the theoretical variance is 0.625 (varxp <- ((1/lambda)^2)/nexp), whereas the variance of the means is 0.6111165 (var(mns)), which they can be compared.
 Comparing to a Normal Distribution
@@ -58,13 +58,13 @@ With a bigger number of simulations, let’s say 100000:
 
 ## Example for a bigger number
 set.seed(1)
-lambda <- 0.2 ## Set lambda as per instructions
-nexp <- 40 ## number of distributions
-nsim <- 100000 ## number of simulations
-mns <- NULL  ## set msn to null 
+lambda <- 0.2 # Set lambda as per instructions
+nexp <- 40 # number of distributions
+nsim <- 100000 # number of simulations
+mns <- NULL  # set msn to null 
 for (i in 1 : nsim) mns <- c(mns, mean(rexp(40,lambda)))
-varxp <- ((1/lambda)^2)/nexp ## theoretical variance
-varmean <- var(mns) ## variance of the means
+varxp <- ((1/lambda)^2)/nexp # theoretical variance
+varmean <- var(mns) # variance of the means
 
 ## plot3
 library(ggplot2)
