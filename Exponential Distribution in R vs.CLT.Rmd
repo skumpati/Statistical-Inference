@@ -29,10 +29,9 @@ hist(mns,col="light green",main="Distribution of Means of rexp")
 As we observe the histogram, with a mean – { mean(mns)  ## [1] 4.9900252} , we can compare to {1/lambda ( ## [1] 5) }, we observed the distribution of means is centred in the theoretical mean. 
 
 ## Sample Variance vs Theoretical Variance
-
-# lambda <- 0.2 # Set lambda as per instructions (does not change)
-# nexp <- 40 # number of distributions (does not change)
-# nsim <- 1000 # number of simulations (does not change)
+lambda <- 0.2 # Set lambda as per instructions (does not change)
+nexp <- 40 # number of distributions (does not change)
+nsim <- 1000 # number of simulations (does not change)
 varxp <- ((1/lambda)^2)/nexp # theoretical variance
 varmean <- var(mns) # variance of the means
 
