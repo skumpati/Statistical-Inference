@@ -9,7 +9,7 @@ Illustrate via simulation and associated explanatory text the properties of the 
 
 In point 3, focus on the difference between the distribution of a large collection of random exponentials and the distribution of a large collection of averages of 40 exponentials. 
 
-## Project 2 (Tooth Growth Data in R dataset Packages)
+## Project 2 (Tooth GrowthData in R dataset Packages)
 
 Now in the second portion of the class, we're going to analyze the ToothGrowth data in the R datasets package. 
 Load the ToothGrowth data and perform some basic exploratory data analyses 
