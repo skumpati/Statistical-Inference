@@ -36,9 +36,9 @@ As we observe the histogram, with a mean of 4.9900252 , we can compare to 1/lamb
 
 Sample Variance vs Theoretical Variance
 
-# lambda <- 0.2 ## Set lambda as per instructions (does not change)
-# nexp <- 40 ## number of distributions (does not change)
-# nsim <- 1000 ## number of simulations (does not change)
+## lambda <- 0.2 ## Set lambda as per instructions (does not change)
+## nexp <- 40 ## number of distributions (does not change)
+## nsim <- 1000 ## number of simulations (does not change)
 ```{r}
 varxp <- ((1/lambda)^2)/nexp ## theoretical variance
 varmean <- var(mns) ## variance of the means
