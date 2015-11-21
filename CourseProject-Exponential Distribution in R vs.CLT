@@ -15,6 +15,7 @@ Project Simulation
 Sample Mean vs Theoretical Mean
 
  	Firstly analyze the sample mean and compare it to the theoretical mean
+ 	
 set.seed(1)
 lambda <- 0.2 ## Set lambda as per instructions
 nexp <- 40 ## number of distributions
@@ -36,7 +37,9 @@ varmean <- var(mns) ## variance of the means
 
 And we see that the theoretical variance is 0.625 (varxp <- ((1/lambda)^2)/nexp), whereas the variance of the means is 0.6111165 (var(mns)), which they can be compared.
 Comparing to a Normal Distribution
-According to the above histogram which is similar to a normal distribution (i.e. what the Central Limit Theorem states “In probability theory, the central limit theorem (CLT) states that, at any given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and well-defined variance, will be approximately normally distributed, regardless of the underlying distribution”)
+
+According to the histogram which is similar to a normal distribution (i.e. what the Central Limit Theorem states “In probability theory, the central limit theorem (CLT) states that, at any given certain conditions, the arithmetic mean of a sufficiently large number of iterates of independent random variables, each with a well-defined expected value and well-defined variance, will be approximately normally distributed, regardless of the underlying distribution”)
+
 library(ggplot2)
 plotdata <- data.frame(mns)
 plot1 <- ggplot(plotdata,aes(x = mns))
