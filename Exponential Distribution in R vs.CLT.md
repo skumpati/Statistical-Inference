@@ -1,8 +1,9 @@
+---
 Author: "Suresh Babu Kumpati"
 Date: "November 21, 2015"
 Output: pdf_document
 Title: "Exponential Distribution in R  vs. Central Limit Theorem"
-
+---
 #Project Description:
 In this project you will investigate the exponential distribution in R and compare it with the Central Limit Theorem. The exponential distribution can be simulated in R with rexp(n, lambda) where lambda is the rate parameter. The mean of exponential distribution is 1/lambda and the standard deviation is also 1/lambda. Set lambda = 0.2 for all of the simulations. You will investigate the distribution of averages of 40 exponentials. Note that you will need to do a thousand simulations.
 Illustrate via simulation and associated explanatory text the properties of the distribution of the mean of 40 exponentials. You should
@@ -31,9 +32,9 @@ As we observe the histogram, with a mean – { mean(mns)  ## [1] 4.9900252} , we
 
 # Sample Variance vs Theoretical Variance
 ```{r}
-lambda <- 0.2 # Set lambda as per instructions (does not change)
-nexp <- 40 # number of distributions (does not change)
-nsim <- 1000 # number of simulations (does not change)
+# lambda <- 0.2 # Set lambda as per instructions (does not change)
+# nexp <- 40 # number of distributions (does not change)
+# nsim <- 1000 # number of simulations (does not change)
 varxp <- ((1/lambda)^2)/nexp # theoretical variance
 varmean <- var(mns) # variance of the means
 ```
@@ -76,7 +77,7 @@ plot1<-plot1+labs(title="Distribution of Means of rexp", y="Density")
 plot1<-plot1 +stat_function(fun=dnorm,args=list( mean=1/lambda, sd=sqrt(varxp)),color = "red", size = 1.0)
 plot1<-plot1 +stat_function(fun=dnorm,args=list( mean=mean(mns), sd=sqrt(varmean)),color = "black", size = 1.0)
 print(plot1)
-```{r}
+```
  
 ## stat_bin: binwidth defaulted to range/30. Use 'binwidth = x' to adjust this.
 
