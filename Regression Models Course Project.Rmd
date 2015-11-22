@@ -128,4 +128,4 @@ boxplot(mpg ~ am, data = mtcars, col = "salmon", ylab = "miles per gallon")
 par(mfrow=c(2, 2))
 plot(best.model)
 ```
-![Plot - BesttModel](\C:\Users\Saviour\Desktop\Rplot- Best Model.jpeg)
+
