@@ -26,7 +26,7 @@ Written as a PDF printout of a compiled (using knitr) R markdown document. Do no
 data(mtcars)
 ```
 #Exploratory analysis
-<=>Results omited for not having enought space and not needed.
+<=>Results omitted for not having enought space and not needed.
 ```{r}
 summary(mtcars)
 mtcars$cyl <- factor(mtcars$cyl)
